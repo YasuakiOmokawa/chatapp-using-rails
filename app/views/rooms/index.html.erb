@@ -1,2 +1,7 @@
-<h1>Rooms#index</h1>
-<p>Find me in app/views/rooms/index.html.erb</p>
+<div class="container">
+  <h5>Hi <%= @current_user.username %> </h5>
+  <h4>Users</h4>
+  <%= render @users %>
+  <h4>Rooms</h4>
+  <%= render @rooms %>
+</div>
